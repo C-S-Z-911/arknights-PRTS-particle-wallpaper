@@ -1,0 +1,238 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "源码: https://steamcommunity.com/sharedfiles/filedetails/?id=2447798562\n非常感谢大佬\n\n做了点修改\n现在可以更改粒子图案\n更改光标外边框\n自定义每个粒子的颜色\n\n\n由于wallpaper与代码的原因,只能通过切换壁纸才对壁纸进行重载\n后续会更新 图转json 文件\n\njson文件格式:\n{\n\t'count':粒子数量,\n\t'size':{\n\t\t'width':宽(X),\n\t\t'height':高(Y)\n\t},\n\t'points':[\n\t\t[X轴坐标 , Y轴坐标 , #RRGGBBAA],\n\t\t...\n\t]\n}",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"border_color" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "边框颜色",
+				"type" : "color",
+				"value" : "0.8 0.8 0.8"
+			},
+			"border_style" : 
+			{
+				"index" : 5,
+				"options" : 
+				[
+					{
+						"label" : "无边框",
+						"value" : "none"
+					},
+					{
+						"label" : "点线边框",
+						"value" : "dotted"
+					},
+					{
+						"label" : "虚线边框",
+						"value" : "dashed"
+					},
+					{
+						"label" : "实线边框",
+						"value" : "solid"
+					},
+					{
+						"label" : "双线边框",
+						"value" : "double"
+					}
+				],
+				"order" : 105,
+				"text" : "边框类型",
+				"type" : "combo",
+				"value" : "solid"
+			},
+			"border_width" : 
+			{
+				"fraction" : false,
+				"index" : 1,
+				"max" : 256,
+				"min" : 0,
+				"order" : 101,
+				"text" : "边框宽度",
+				"type" : "slider",
+				"value" : 1
+			},
+			"customize" : 
+			{
+				"index" : 9,
+				"order" : 109,
+				"text" : "启用自定义",
+				"type" : "bool",
+				"value" : false
+			},
+			"h4_01" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "<h4>光标边框设置:<h4/>",
+				"type" : "text",
+				"value" : false
+			},
+			"h4_02" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "<hr width=\"500%\"/><h4>粒子设置:<h4/>",
+				"type" : "text",
+				"value" : false
+			},
+			"height" : 
+			{
+				"fraction" : false,
+				"index" : 3,
+				"max" : 256,
+				"min" : 0,
+				"order" : 103,
+				"text" : "高",
+				"type" : "slider",
+				"value" : 36
+			},
+			"json_url" : 
+			{
+				"condition" : "customize.value == 1",
+				"index" : 11,
+				"order" : 111,
+				"text" : "json路径",
+				"type" : "textinput",
+				"value" : "json\\罗德岛.json"
+			},
+			"particle_style" : 
+			{
+				"condition" : "customize.value == 0",
+				"index" : 10,
+				"options" : 
+				[
+					{
+						"label" : "静海集团",
+						"value" : ".\\json\\静海集团.json"
+					},
+					{
+						"label" : "罗德岛",
+						"value" : ".\\json\\罗德岛.json"
+					},
+					{
+						"label" : "龙门",
+						"value" : ".\\json\\龙门.json"
+					},
+					{
+						"label" : "整合运动",
+						"value" : ".\\json\\整合运动.json"
+					},
+					{
+						"label" : "莱茵生命",
+						"value" : ".\\json\\莱茵生命.json"
+					},
+					{
+						"label" : "企鹅物流",
+						"value" : ".\\json\\企鹅物流.json"
+					},
+					{
+						"label" : "移动城邦",
+						"value" : ".\\json\\移动城邦.json"
+					},
+					{
+						"label" : "源石",
+						"value" : ".\\json\\源石.json"
+					},
+					{
+						"label" : "源石技艺",
+						"value" : ".\\json\\源石技艺.json"
+					},
+					{
+						"label" : "罗德岛(胸牌)",
+						"value" : ".\\json\\罗德岛(胸牌).json"
+					},
+					{
+						"label" : "感染者",
+						"value" : ".\\json\\感染者.json"
+					},
+					{
+						"label" : "01-INFORMATION",
+						"value" : ".\\json\\01-INFORMATION.json"
+					},
+					{
+						"label" : "04-MEDIA",
+						"value" : ".\\json\\04-MEDIA.json"
+					}
+				],
+				"order" : 110,
+				"text" : "粒子样式",
+				"type" : "combo",
+				"value" : ".\\json\\静海集团.json"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"text01" : 
+			{
+				"index" : 13,
+				"order" : 113,
+				"text" : "<font color='#FF0000'>由于wallpaper与代码的原因<br>只能通过切换壁纸才能应用壁纸设置</font>",
+				"type" : "text",
+				"value" : false
+			},
+			"text02" : 
+			{
+				"condition" : "customize.value == 1",
+				"index" : 12,
+				"order" : 112,
+				"text" : "后续会更新图片转json的工具",
+				"type" : "text",
+				"value" : false
+			},
+			"width" : 
+			{
+				"fraction" : false,
+				"index" : 2,
+				"max" : 256,
+				"min" : 0,
+				"order" : 102,
+				"text" : "宽",
+				"type" : "slider",
+				"value" : 36
+			},
+			"x" : 
+			{
+				"fraction" : false,
+				"index" : 7,
+				"max" : 2048,
+				"min" : -2048,
+				"order" : 107,
+				"text" : "X轴位置",
+				"type" : "slider",
+				"value" : 0
+			},
+			"y" : 
+			{
+				"fraction" : false,
+				"index" : 8,
+				"max" : 2048,
+				"min" : -2048,
+				"order" : 108,
+				"text" : "Y轴位置",
+				"type" : "slider",
+				"value" : 0
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
+	"tags" : [ "Game" ],
+	"title" : "基于明日方舟官网的粒子特效(可更改粒子图案)",
+	"type" : "web",
+	"version" : 8,
+	"visibility" : "public",
+	"workshopid" : "3486243270",
+	"workshopurl" : "steam://url/CommunityFilePage/3486243270"
+}
