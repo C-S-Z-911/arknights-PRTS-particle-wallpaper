@@ -28,7 +28,11 @@
   ]
 }
 ```
-- **后续**: 后续会更新外置图片转json脚本
+- **图片转json脚本**: https://github.com/C-S-Z-911/Images-to-JSON-particle/settings
+- **注意事项**
+  - 粒子数量超过10000时预览可能不完整
+  - 颜色必须必为十六进制RGBA格式
+  - json粒子 宽/高 最好控制在 512*512 左右以便拥有较好的显示效果
 
 ## 关于
 - **源码**: https://steamcommunity.com/sharedfiles/filedetails/?id=2447798562
